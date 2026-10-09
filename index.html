@@ -3,350 +3,328 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Elite Residency — Bulgaria residence information, Trade Representative Office guidance, and European opportunities.">
-<title>Elite Residency | Bulgaria & Europe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Elite Residency — your gateway to Bulgaria and Europe. Residence information and Trade Representative Office guidance.">
+<title>Elite Residency | Your Gateway to Europe</title>
 <style>
 :root {
-  --navy: #101e38;
-  --navy2: #1a2d4e;
-  --gold: #d6b36a;
-  --cream: #f7f5f0;
-  --white: #ffffff;
-  --text: #263247;
-  --muted: #687386;
+  --navy: #032344;
+  --navy2: #07345b;
+  --gold: #e5ad38;
+  --cream: #f8f6f1;
+  --ink: #172b46;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
+  color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background: var(--cream);
-  line-height: 1.7;
+  line-height: 1.6;
+  background: #fff;
 }
-a { color: inherit; }
-.topbar {
+a { text-decoration: none; }
+.top {
   background: var(--navy);
   color: white;
-  padding: 9px 5%;
+  padding: 14px 5%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 13px;
-}
-.topbar a { color: white; text-decoration: none; }
-.flags { letter-spacing: 4px; font-size: 19px; }
-header {
-  background: white;
-  padding: 18px 5%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 22px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #e9e5dc;
+  gap: 20px;
 }
 .brand {
   display: flex;
   align-items: center;
-  gap: 13px;
-  text-decoration: none;
-}
-.brand-mark {
-  width: 52px;
-  height: 52px;
-  border: 2px solid var(--gold);
-  color: var(--navy);
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-weight: bold;
-  font-size: 23px;
-}
-.brand-name { font-size: 21px; font-weight: bold; color: var(--navy); }
-.brand-sub { font-size: 11px; color: var(--muted); letter-spacing: 2px; }
-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
-nav a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--navy);
-}
-nav a:hover { color: #9c762f; }
-.languages { display: flex; gap: 10px; }
-.languages a {
-  text-decoration: none;
-  border: 1px solid #ded8ca;
-  padding: 5px 9px;
-  border-radius: 5px;
-  font-size: 12px;
-}
-.hero {
+  gap: 12px;
   color: white;
+}
+.logo {
+  font-size: 36px;
+  color: var(--gold);
+  line-height: 1;
+}
+.brand strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+.tagline {
+  display: block;
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  font-size: 14px;
+}
+nav a:hover { color: var(--gold); }
+.languages { display: flex; gap: 12px; }
+.languages a { white-space: nowrap; font-size: 12px; }
+.hero {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
   background:
-    radial-gradient(ellipse at 80% 20%, #344665 0, transparent 42%),
-    linear-gradient(120deg, var(--navy), #1b3152);
-  padding: 85px 7% 90px;
-  position: relative;
-  overflow: hidden;
+    linear-gradient(90deg, rgba(2,25,49,.25), rgba(2,25,49,.7) 34%, rgba(2,25,49,.2)),
+    url("Elite%20Residency_%20Your%20Gateway%20to%20Europe.png")
+    center 48% / cover no-repeat;
+  color: white;
 }
-.hero:after {
-  content: "✦";
-  position: absolute;
-  right: 9%;
-  top: 22px;
-  font-size: 250px;
-  color: rgba(214,179,106,.08);
-  pointer-events: none;
+.hero-content {
+  width: min(1200px, 100%);
+  margin: auto;
+  padding: 48px 5%;
 }
-.hero-inner { max-width: 1100px; margin: auto; position: relative; z-index: 1; }
 .eyebrow {
   color: var(--gold);
-  font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-h1 { max-width: 760px; font-size: clamp(36px, 5vw, 60px); line-height: 1.12; margin: 20px 0; }
-.hero p { max-width: 650px; color: #e0e5ed; font-size: 18px; }
-.hero-flags { font-size: 28px; margin-top: 22px; letter-spacing: 7px; }
-.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.13;
+  max-width: 570px;
+  margin: 12px 0;
+}
+h1 span { color: var(--gold); }
+.hero p { max-width: 470px; font-size: 16px; }
 .btn {
   display: inline-block;
+  margin-top: 12px;
+  background: var(--gold);
+  color: var(--navy);
   padding: 12px 22px;
   border-radius: 5px;
-  text-decoration: none;
   font-weight: bold;
-  transition: .2s;
 }
-.btn-gold { background: var(--gold); color: var(--navy); }
-.btn-outline { border: 1px solid #d8deea; color: white; }
-.btn:hover { transform: translateY(-2px); }
-.trust-strip {
-  background: white;
-  padding: 22px 5%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  border-bottom: 1px solid #ebe7de;
-  color: var(--navy);
-  font-weight: bold;
-  font-size: 14px;
-}
-.trust-strip span { display: flex; align-items: center; gap: 9px; }
-main { max-width: 1120px; margin: auto; padding: 65px 24px; }
-.section-heading { text-align: center; margin-bottom: 35px; }
-.section-heading .eyebrow { color: #9c762f; }
-h2 { color: var(--navy); font-size: clamp(27px, 3vw, 36px); margin: 10px 0; }
-.section-heading p { color: var(--muted); max-width: 690px; margin: 0 auto; }
-.cards {
+.btn:hover { background: #f1c65f; }
+.services {
+  max-width: 1300px;
+  margin: auto;
+  padding: 18px 5%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 22px;
 }
 .card {
+  overflow: hidden;
   background: white;
-  padding: 28px;
   border-radius: 9px;
-  border: 1px solid #e8e2d7;
-  box-shadow: 0 8px 25px rgba(16,30,56,.04);
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 4px 12px #0c244012;
   display: flex;
   flex-direction: column;
+  min-height: 255px;
 }
-.card-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 8px;
-  background: #f3eddf;
+.card-top {
+  height: 85px;
+  background: linear-gradient(135deg, #d8e7f0, #f7f5ef);
+  display: flex;
+  align-items: center;
+  padding: 15px 24px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
   display: grid;
   place-items: center;
+  font-size: 27px;
+  border: 2px solid white;
+}
+.card-body { padding: 5px 24px 22px; flex: 1; }
+.card h2 {
+  font: bold 20px Georgia, serif;
   color: var(--navy);
-  font-size: 26px;
+  margin: 0 0 8px;
 }
-.card h3 { color: var(--navy); font-size: 20px; margin-bottom: 5px; }
-.card p { color: var(--muted); font-size: 15px; flex: 1; }
-.card a { color: #8b6826; font-weight: bold; text-decoration: none; }
-.card a:hover { text-decoration: underline; }
-.about {
-  background: white;
-  border-radius: 10px;
-  padding: 38px;
+.card p { font-size: 14px; color: #435067; margin: 0 0 16px; }
+.card a { color: #bb7d0b; font-weight: bold; font-size: 14px; }
+.benefits {
+  background: var(--cream);
+  padding: 28px 5%;
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 35px;
-  border: 1px solid #e8e2d7;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
 }
-.about p { color: var(--muted); }
-.notice {
-  background: #f3eddf;
-  border-left: 4px solid var(--gold);
-  padding: 20px;
-  border-radius: 5px;
-  font-size: 14px;
-}
+.benefit { padding: 10px; border-right: 1px solid #e6d5ad; }
+.benefit:last-child { border-right: 0; }
+.benefit .symbol { color: #c8942c; font-size: 30px; }
+.benefit strong { display: block; color: var(--navy); }
+.benefit small { color: #526076; }
 .contact {
   background: var(--navy);
   color: white;
-  border-radius: 10px;
-  padding: 42px;
-  text-align: center;
+  padding: 30px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  align-items: center;
 }
-.contact h2 { color: white; }
-.contact p { color: #dce2ed; }
-.contact a:not(.btn) { color: var(--gold); }
+.contact h2 { font: 22px Georgia, serif; color: var(--gold); }
+.contact a { color: white; }
+.contact p { margin: 5px 0; font-size: 14px; }
+.eu-mark { text-align: center; font-size: 19px; }
+.eu-mark span { color: var(--gold); }
 footer {
-  background: #0b1427;
-  color: #c8cfdb;
-  padding: 28px 5%;
+  background: #02182e;
+  color: #d3dce8;
+  padding: 15px 5%;
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
 }
-footer p { margin: 7px 0; }
-@media(max-width: 800px) {
-  header { align-items: flex-start; }
-  nav { gap: 12px; }
-  .cards { grid-template-columns: 1fr; }
-  .about { grid-template-columns: 1fr; padding: 25px; }
-  .hero { padding: 60px 24px; }
-  .trust-strip { gap: 15px; }
+footer p { margin: 5px; }
+@media(max-width: 950px) {
+  .top { align-items: flex-start; flex-direction: column; }
+  nav { justify-content: flex-start; gap: 14px; }
+  .services { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media(max-width: 580px) {
+  .brand strong { font-size: 19px; }
+  .hero { min-height: 420px; background-position: center; }
+  .hero-content { padding: 35px 6%; }
+  .services { grid-template-columns: 1fr; padding: 18px 5%; }
+  .benefits { grid-template-columns: repeat(2,1fr); }
+  .benefit:nth-child(2) { border-right: 0; }
+  .contact { grid-template-columns: 1fr; text-align: center; }
 }
 </style>
 </head>
 <body>
 
-<div class="topbar">
-  <span>Residence in Bulgaria · European Opportunities</span>
-  <span><a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a> &nbsp; | &nbsp; <a href="tel:+359876451969">+359 876 451 969</a></span>
-</div>
-
-<header>
+<header class="top">
   <a class="brand" href="index.html">
-    <span class="brand-mark">E</span>
+    <span class="logo">❧</span>
     <span>
-      <span class="brand-name">ELITE RESIDENCY</span><br>
-      <span class="brand-sub">BULGARIA · EUROPE</span>
+      <strong>ELITE RESIDENCY</strong>
+      <span class="tagline">YOUR GATEWAY TO EUROPE</span>
     </span>
   </a>
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="tro.html">TRO</a>
     <a href="residence.html">Residence</a>
     <a href="europe.html">Bulgaria → Europe</a>
-    <div class="languages">
-      <a href="index.html">🇬🇧 EN</a>
-      <a href="fr/index.html">🇫🇷 FR</a>
-      <a href="ar/index.html">🇸🇦 AR</a>
-    </div>
+    <a href="#contact">Contact</a>
+    <span class="languages">
+      <a href="index.html">🇬🇧 English</a>
+      <a href="fr/index.html">🇫🇷 Français</a>
+      <a href="ar/index.html">🇸🇦 العربية</a>
+    </span>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">Your European journey starts here</div>
-    <h1>Discover Bulgaria.<br>Explore Europe.</h1>
+  <div class="hero-content">
+    <div class="eyebrow">Residence in Bulgaria</div>
+    <h1>Your Future in Bulgaria Opens the Door <span>to Europe</span></h1>
     <p>
-      Explore information about residence options in Bulgaria,
-      Trade Representative Offices, and opportunities to connect
-      with European markets.
+      Get information about Bulgarian residence, Trade Representative
+      Offices (TRO), and business opportunities across Europe.
     </p>
-    <div class="actions">
-      <a class="btn btn-gold" href="residence.html">Explore Residence</a>
-      <a class="btn btn-outline" href="tro.html">Discover TRO</a>
-    </div>
-    <div class="hero-flags" aria-label="Bulgarian and European Union flags">🇧🇬 &nbsp; 🇪🇺</div>
+    <a class="btn" href="residence.html">Discover Your Options&nbsp; →</a>
   </div>
 </section>
 
-<div class="trust-strip">
-  <span>🇧🇬 Bulgaria-focused information</span>
-  <span>✦ Residence guidance</span>
-  <span>✧ European opportunities</span>
-</div>
-
-<main>
-  <section>
-    <div class="section-heading">
-      <div class="eyebrow">Our services</div>
-      <h2>How We Can Help</h2>
-      <p>Explore our main information areas and find the next step for your situation.</p>
+<section class="services" aria-label="Our services">
+  <article class="card">
+    <div class="card-top"><div class="icon">⌂</div></div>
+    <div class="card-body">
+      <h2>Residence in Bulgaria</h2>
+      <p>Explore residence options in Bulgaria and find the path that may suit your situation.</p>
+      <a href="residence.html">Learn more&nbsp; →</a>
     </div>
+  </article>
 
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon">⌂</div>
-        <h3>Residence in Bulgaria</h3>
-        <p>Learn about residence pathways, general application steps, and the importance of meeting the applicable requirements.</p>
-        <a href="residence.html">Explore residence →</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">▤</div>
-        <h3>Trade Representative Office</h3>
-        <p>Discover general information about a foreign company's Trade Representative Office (TRO) in Bulgaria.</p>
-        <a href="tro.html">Explore TRO →</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">✧</div>
-        <h3>Bulgaria & Europe</h3>
-        <p>Understand Bulgaria's place in Europe and learn why residence, travel, and work rights are not the same.</p>
-        <a href="europe.html">Explore Europe →</a>
-      </article>
+  <article class="card">
+    <div class="card-top"><div class="icon">▦</div></div>
+    <div class="card-body">
+      <h2>Trade Representative Office (TRO)</h2>
+      <p>Learn about registering a foreign company's trade representative office in Bulgaria.</p>
+      <a href="tro.html">Learn more&nbsp; →</a>
     </div>
-  </section>
+  </article>
 
-  <section style="margin-top:65px">
-    <div class="about">
-      <div>
-        <div class="eyebrow">Elite Residency</div>
-        <h2>A Clearer Starting Point for Bulgaria</h2>
-        <p>
-          Bulgaria is a member of the European Union and the Schengen Area.
-          The appropriate immigration route depends on your nationality,
-          circumstances, and the rules that apply to your case.
-        </p>
-        <p>
-          Our website provides general information to help you understand
-          topics to explore before proceeding.
-        </p>
-      </div>
-      <div class="notice">
-        <strong>Important information</strong>
-        <p>
-          A Bulgarian residence permit does not automatically grant the
-          right to live or work in every European country. Short visits
-          within the Schengen Area are subject to applicable conditions.
-          Approval of any application is determined by the competent authorities.
-        </p>
-      </div>
+  <article class="card">
+    <div class="card-top"><div class="icon">✧</div></div>
+    <div class="card-body">
+      <h2>Bulgaria → Europe</h2>
+      <p>Discover information about European travel rules and cross-border business opportunities.</p>
+      <a href="europe.html">Learn more&nbsp; →</a>
     </div>
-  </section>
+  </article>
 
-  <section style="margin-top:65px">
-    <div class="contact" id="contact">
-      <div class="eyebrow">Get in touch</div>
-      <h2>Let's Talk About Your Plans</h2>
-      <p>Contact Elite Residency for information about Bulgaria residence options and TRO-related procedures.</p>
-      <p>
-        Email: <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a><br>
-        Phone: <a href="tel:+359876451969">+359 876 451 969</a>
-      </p>
-      <div class="actions" style="justify-content:center">
-        <a class="btn btn-gold" href="https://wa.me/359876451969" target="_blank" rel="noopener noreferrer">Contact us on WhatsApp</a>
-        <a class="btn btn-outline" href="mailto:eliteresidency79@gmail.com">Send an email</a>
-      </div>
+  <article class="card">
+    <div class="card-top"><div class="icon">♧</div></div>
+    <div class="card-body">
+      <h2>Our Support</h2>
+      <p>Contact us for information and assistance understanding the next steps for your case.</p>
+      <a href="#contact">Contact us&nbsp; →</a>
     </div>
-  </section>
-</main>
+  </article>
+</section>
+
+<section class="benefits">
+  <div class="benefit">
+    <div class="symbol">♧</div>
+    <strong>Reliable Information</strong>
+    <small>Clear general guidance</small>
+  </div>
+  <div class="benefit">
+    <div class="symbol">♧</div>
+    <strong>Personalized Support</strong>
+    <small>Every case is unique</small>
+  </div>
+  <div class="benefit">
+    <div class="symbol">◎</div>
+    <strong>Access to Europe</strong>
+    <small>Explore more opportunities</small>
+  </div>
+  <div class="benefit">
+    <div class="symbol">✧</div>
+    <strong>Your Trusted Partner</strong>
+    <small>Information for your next step</small>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div>
+    <div class="eyebrow">Bulgaria today</div>
+    <h2>Your Gateway to Europe</h2>
+    <p>Residence information and business guidance.</p>
+  </div>
+  <div>
+    <h2>Contact Elite Residency</h2>
+    <p>✉ <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a></p>
+    <p>☎ <a href="tel:+359876451969">+359 876 451 969</a></p>
+    <p>☏ <a href="https://wa.me/359876451969">Chat with us on WhatsApp</a></p>
+  </div>
+  <div class="eu-mark">
+    🇧🇬 &nbsp; 🇪🇺
+    <p>Bulgaria <span>+ Europe</span></p>
+    <small>MORE POSSIBILITIES</small>
+  </div>
+</section>
 
 <footer>
-  <p><strong>ELITE RESIDENCY · BULGARIA & EUROPE</strong></p>
   <p>© 2026 Elite Residency. All rights reserved.</p>
-  <p>General information only. This website is not an official European Union or Bulgarian government website and does not guarantee residence approval.</p>
+  <p>This website provides general information and does not guarantee residence approval. It is not an official EU or government website or a substitute for legal advice.</p>
 </footer>
 
 </body>
