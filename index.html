@@ -1,150 +1,353 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bulgarian TRO Services | Elite Residency</title>
-<meta name="description" content="Learn about Bulgaria's Trade Representative Office route and related residence procedures with Elite Residency.">
+<meta name="description" content="Elite Residency — Bulgaria residence information, Trade Representative Office guidance, and European opportunities.">
+<title>Elite Residency | Bulgaria & Europe</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#071426;color:#fff;line-height:1.7}
-a{color:inherit;text-decoration:none}
-.container{width:90%;max-width:1100px;margin:auto}
-header{background:#081a31;border-bottom:1px solid #c8a45d;padding:20px 0}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.logo{font-size:24px;font-weight:bold;color:#d7b66a}
-nav{display:flex;gap:16px;flex-wrap:wrap}
-nav a:hover{color:#d7b66a}
-.lang{color:#d7b66a;font-weight:bold}
-.hero{padding:75px 0;background:linear-gradient(135deg,#071426,#102b4d)}
-.hero h1{font-size:43px;line-height:1.2;margin-bottom:20px}
-.hero p{font-size:19px;color:#d8e0ea;max-width:850px}
-section{padding:55px 0}
-h2{color:#d7b66a;font-size:30px;margin-bottom:18px}
-h3{color:#d7b66a;margin-bottom:10px}
-p,li{color:#d8e0ea}
-ul{padding-left:22px;margin:15px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{background:#10233d;border:1px solid #27415f;border-radius:10px;padding:24px}
-.notice{border-left:4px solid #d7b66a;background:#10233d;padding:22px;margin-top:22px}
-.btn{display:inline-block;background:#d7b66a;color:#071426;padding:12px 22px;border-radius:5px;font-weight:bold;margin-top:18px}
-.contact{background:#0d2038}
-.contact a,.official a{color:#d7b66a;text-decoration:underline}
-footer{padding:28px 0;background:#06101e;color:#aeb8c5;font-size:14px}
-@media(max-width:700px){.hero h1{font-size:34px}.nav{align-items:flex-start;flex-direction:column}}
+:root {
+  --navy: #101e38;
+  --navy2: #1a2d4e;
+  --gold: #d6b36a;
+  --cream: #f7f5f0;
+  --white: #ffffff;
+  --text: #263247;
+  --muted: #687386;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.7;
+}
+a { color: inherit; }
+.topbar {
+  background: var(--navy);
+  color: white;
+  padding: 9px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+}
+.topbar a { color: white; text-decoration: none; }
+.flags { letter-spacing: 4px; font-size: 19px; }
+header {
+  background: white;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e9e5dc;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--gold);
+  color: var(--navy);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 23px;
+}
+.brand-name { font-size: 21px; font-weight: bold; color: var(--navy); }
+.brand-sub { font-size: 11px; color: var(--muted); letter-spacing: 2px; }
+nav { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--navy);
+}
+nav a:hover { color: #9c762f; }
+.languages { display: flex; gap: 10px; }
+.languages a {
+  text-decoration: none;
+  border: 1px solid #ded8ca;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.hero {
+  color: white;
+  background:
+    radial-gradient(ellipse at 80% 20%, #344665 0, transparent 42%),
+    linear-gradient(120deg, var(--navy), #1b3152);
+  padding: 85px 7% 90px;
+  position: relative;
+  overflow: hidden;
+}
+.hero:after {
+  content: "✦";
+  position: absolute;
+  right: 9%;
+  top: 22px;
+  font-size: 250px;
+  color: rgba(214,179,106,.08);
+  pointer-events: none;
+}
+.hero-inner { max-width: 1100px; margin: auto; position: relative; z-index: 1; }
+.eyebrow {
+  color: var(--gold);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+h1 { max-width: 760px; font-size: clamp(36px, 5vw, 60px); line-height: 1.12; margin: 20px 0; }
+.hero p { max-width: 650px; color: #e0e5ed; font-size: 18px; }
+.hero-flags { font-size: 28px; margin-top: 22px; letter-spacing: 7px; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .2s;
+}
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-outline { border: 1px solid #d8deea; color: white; }
+.btn:hover { transform: translateY(-2px); }
+.trust-strip {
+  background: white;
+  padding: 22px 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-bottom: 1px solid #ebe7de;
+  color: var(--navy);
+  font-weight: bold;
+  font-size: 14px;
+}
+.trust-strip span { display: flex; align-items: center; gap: 9px; }
+main { max-width: 1120px; margin: auto; padding: 65px 24px; }
+.section-heading { text-align: center; margin-bottom: 35px; }
+.section-heading .eyebrow { color: #9c762f; }
+h2 { color: var(--navy); font-size: clamp(27px, 3vw, 36px); margin: 10px 0; }
+.section-heading p { color: var(--muted); max-width: 690px; margin: 0 auto; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 9px;
+  border: 1px solid #e8e2d7;
+  box-shadow: 0 8px 25px rgba(16,30,56,.04);
+  display: flex;
+  flex-direction: column;
+}
+.card-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  background: #f3eddf;
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  font-size: 26px;
+}
+.card h3 { color: var(--navy); font-size: 20px; margin-bottom: 5px; }
+.card p { color: var(--muted); font-size: 15px; flex: 1; }
+.card a { color: #8b6826; font-weight: bold; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+.about {
+  background: white;
+  border-radius: 10px;
+  padding: 38px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 35px;
+  border: 1px solid #e8e2d7;
+}
+.about p { color: var(--muted); }
+.notice {
+  background: #f3eddf;
+  border-left: 4px solid var(--gold);
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.contact {
+  background: var(--navy);
+  color: white;
+  border-radius: 10px;
+  padding: 42px;
+  text-align: center;
+}
+.contact h2 { color: white; }
+.contact p { color: #dce2ed; }
+.contact a:not(.btn) { color: var(--gold); }
+footer {
+  background: #0b1427;
+  color: #c8cfdb;
+  padding: 28px 5%;
+  text-align: center;
+  font-size: 13px;
+}
+footer p { margin: 7px 0; }
+@media(max-width: 800px) {
+  header { align-items: flex-start; }
+  nav { gap: 12px; }
+  .cards { grid-template-columns: 1fr; }
+  .about { grid-template-columns: 1fr; padding: 25px; }
+  .hero { padding: 60px 24px; }
+  .trust-strip { gap: 15px; }
+}
 </style>
 </head>
 <body>
 
-<header>
-<div class="container nav">
-<div class="logo">ELITE RESIDENCY</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="tro.html">TRO</a>
-<a href="residence.html">Residence</a>
-<a href="europe.html">Bulgaria → Europe</a>
-<span class="lang">EN</span>
-<a href="fr/tro.html">FR</a>
-<a href="ar/tro.html">AR</a>
-</nav>
+<div class="topbar">
+  <span>Residence in Bulgaria · European Opportunities</span>
+  <span><a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a> &nbsp; | &nbsp; <a href="tel:+359876451969">+359 876 451 969</a></span>
 </div>
+
+<header>
+  <a class="brand" href="index.html">
+    <span class="brand-mark">E</span>
+    <span>
+      <span class="brand-name">ELITE RESIDENCY</span><br>
+      <span class="brand-sub">BULGARIA · EUROPE</span>
+    </span>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tro.html">TRO</a>
+    <a href="residence.html">Residence</a>
+    <a href="europe.html">Bulgaria → Europe</a>
+    <div class="languages">
+      <a href="index.html">🇬🇧 EN</a>
+      <a href="fr/index.html">🇫🇷 FR</a>
+      <a href="ar/index.html">🇸🇦 AR</a>
+    </div>
+  </nav>
 </header>
 
 <section class="hero">
-<div class="container">
-<h1>Trade Representative Office in Bulgaria</h1>
-<p>Understand the requirements, prepare your documents and explore whether Bulgaria's Trade Representative Office route may fit your circumstances. Elite Residency provides guidance and application preparation support.</p>
-<a class="btn" href="#contact">Discuss Your Case</a>
-</div>
+  <div class="hero-inner">
+    <div class="eyebrow">Your European journey starts here</div>
+    <h1>Discover Bulgaria.<br>Explore Europe.</h1>
+    <p>
+      Explore information about residence options in Bulgaria,
+      Trade Representative Offices, and opportunities to connect
+      with European markets.
+    </p>
+    <div class="actions">
+      <a class="btn btn-gold" href="residence.html">Explore Residence</a>
+      <a class="btn btn-outline" href="tro.html">Discover TRO</a>
+    </div>
+    <div class="hero-flags" aria-label="Bulgarian and European Union flags">🇧🇬 &nbsp; 🇪🇺</div>
+  </div>
 </section>
 
-<section>
-<div class="container">
-<h2>What is a Bulgarian TRO?</h2>
-<p>A Trade Representative Office (TRO) is registered in Bulgaria through the Bulgarian Chamber of Commerce and Industry (BCCI). It is a representative structure for a foreign company, not a separate Bulgarian commercial company.</p>
-<div class="notice">
-<strong>Important:</strong> A TRO is not entitled to conduct independent economic or commercial activity in Bulgaria. Registration does not guarantee a residence permit. The relevant authorities assess each application under the applicable rules.
+<div class="trust-strip">
+  <span>🇧🇬 Bulgaria-focused information</span>
+  <span>✦ Residence guidance</span>
+  <span>✧ European opportunities</span>
 </div>
-</div>
-</section>
 
-<section>
-<div class="container">
-<h2>How Elite Residency can help</h2>
-<div class="grid">
-<div class="card">
-<h3>Initial assessment</h3>
-<p>Review your circumstances and the foreign company's background to identify questions that should be checked before proceeding.</p>
-</div>
-<div class="card">
-<h3>Document preparation</h3>
-<p>Help organise supporting documents and identify items that may require translation, certification or verification.</p>
-</div>
-<div class="card">
-<h3>Process guidance</h3>
-<p>Explain the general sequence of registration and related residence procedures, including the need to confirm current requirements with the relevant authorities.</p>
-</div>
-</div>
-</div>
-</section>
+<main>
+  <section>
+    <div class="section-heading">
+      <div class="eyebrow">Our services</div>
+      <h2>How We Can Help</h2>
+      <p>Explore our main information areas and find the next step for your situation.</p>
+    </div>
 
-<section>
-<div class="container">
-<h2>Company turnover: our screening threshold</h2>
-<p>Before accepting a TRO-related case, Elite Residency uses the following minimum client-screening threshold for the foreign company:</p>
-<div class="notice">
-<h3>EUR 152,000 per year for each of the preceding two years</h3>
-<p>This means at least EUR 152,000 in Year 1 and EUR 152,000 in Year 2.</p>
-<p><strong>This is Elite Residency's own screening threshold.</strong> It is not presented as the statutory Bulgarian minimum. Official eligibility requirements and evidence must be verified for each case before proceeding.</p>
-</div>
-</div>
-</section>
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">⌂</div>
+        <h3>Residence in Bulgaria</h3>
+        <p>Learn about residence pathways, general application steps, and the importance of meeting the applicable requirements.</p>
+        <a href="residence.html">Explore residence →</a>
+      </article>
 
-<section>
-<div class="container">
-<h2>Who may be eligible?</h2>
-<p>Eligibility depends on the foreign company, its documentation, the proposed representative and the current Bulgarian rules. Before proceeding, relevant factors may include:</p>
-<ul>
-<li>The foreign company's registration and business history.</li>
-<li>Evidence of the company's activity and financial position.</li>
-<li>Required corporate and representative documents.</li>
-<li>Compliance with current BCCI and Bulgarian residence requirements.</li>
-<li>Any applicable limits on the number of representatives who may qualify through this route.</li>
-</ul>
-<p>These are general considerations, not a complete legal checklist or a promise of approval.</p>
-</div>
-</section>
+      <article class="card">
+        <div class="card-icon">▤</div>
+        <h3>Trade Representative Office</h3>
+        <p>Discover general information about a foreign company's Trade Representative Office (TRO) in Bulgaria.</p>
+        <a href="tro.html">Explore TRO →</a>
+      </article>
 
-<section class="official">
-<div class="container">
-<h2>Official information</h2>
-<ul>
-<li><a href="https://www.bcci.bg/tradereg-repres-en-2025.html" target="_blank" rel="noopener noreferrer">BCCI — Trade Representative Offices</a></li>
-<li><a href="https://www.mvr.bg/migration/en/" target="_blank" rel="noopener noreferrer">Bulgarian Ministry of Interior — Migration Directorate</a></li>
-</ul>
-<p>Always confirm current rules, required documents and fees with the relevant official authority.</p>
-</div>
-</section>
+      <article class="card">
+        <div class="card-icon">✧</div>
+        <h3>Bulgaria & Europe</h3>
+        <p>Understand Bulgaria's place in Europe and learn why residence, travel, and work rights are not the same.</p>
+        <a href="europe.html">Explore Europe →</a>
+      </article>
+    </div>
+  </section>
 
-<section class="contact" id="contact">
-<div class="container">
-<h2>Contact Elite Residency</h2>
-<p>For an initial discussion about your company's circumstances and a possible Bulgarian TRO route:</p>
-<br>
-<p><strong>Email:</strong> <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a></p>
-<p><strong>Phone / WhatsApp:</strong> <a href="tel:+359876451969">+359 876 451 969</a></p>
-<a class="btn" href="https://wa.me/359876451969" target="_blank" rel="noopener noreferrer">Contact us on WhatsApp</a>
-</div>
-</section>
+  <section style="margin-top:65px">
+    <div class="about">
+      <div>
+        <div class="eyebrow">Elite Residency</div>
+        <h2>A Clearer Starting Point for Bulgaria</h2>
+        <p>
+          Bulgaria is a member of the European Union and the Schengen Area.
+          The appropriate immigration route depends on your nationality,
+          circumstances, and the rules that apply to your case.
+        </p>
+        <p>
+          Our website provides general information to help you understand
+          topics to explore before proceeding.
+        </p>
+      </div>
+      <div class="notice">
+        <strong>Important information</strong>
+        <p>
+          A Bulgarian residence permit does not automatically grant the
+          right to live or work in every European country. Short visits
+          within the Schengen Area are subject to applicable conditions.
+          Approval of any application is determined by the competent authorities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:65px">
+    <div class="contact" id="contact">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's Talk About Your Plans</h2>
+      <p>Contact Elite Residency for information about Bulgaria residence options and TRO-related procedures.</p>
+      <p>
+        Email: <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a><br>
+        Phone: <a href="tel:+359876451969">+359 876 451 969</a>
+      </p>
+      <div class="actions" style="justify-content:center">
+        <a class="btn btn-gold" href="https://wa.me/359876451969" target="_blank" rel="noopener noreferrer">Contact us on WhatsApp</a>
+        <a class="btn btn-outline" href="mailto:eliteresidency79@gmail.com">Send an email</a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-<div class="container">
-<p>© Elite Residency Bulgaria. This page provides general information, not legal advice. Requirements may change. No registration or residence outcome is guaranteed. Each case should be assessed individually.</p>
-</div>
+  <p><strong>ELITE RESIDENCY · BULGARIA & EUROPE</strong></p>
+  <p>© 2026 Elite Residency. All rights reserved.</p>
+  <p>General information only. This website is not an official European Union or Bulgarian government website and does not guarantee residence approval.</p>
 </footer>
 
 </body>
 </html>
-```
