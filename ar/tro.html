@@ -2,200 +2,150 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="معلومات حول مكتب التمثيل التجاري للشركات الأجنبية في بلغاريا.">
-  <title>مكتب التمثيل التجاري | إليت ريزيدنسي</title>
-
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Tahoma, sans-serif;
-      background: #f5f7fa;
-      color: #243047;
-      line-height: 1.9;
-    }
-
-    header {
-      background: #123b32;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 5px 10px;
-      color: #123b32;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    main {
-      max-width: 950px;
-      margin: 35px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 22px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.05);
-    }
-
-    h2 { color: #123b32; }
-
-    .highlight {
-      background: #eaf3ed;
-      border-right: 5px solid #c5a45b;
-      padding: 18px;
-      margin: 20px 0;
-    }
-
-    .button {
-      display: inline-block;
-      background: #123b32;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin: 8px 0;
-    }
-
-    footer {
-      background: #123b32;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 25px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتب التمثيل التجاري | Elite Residency</title>
+<meta name="description" content="معلومات عامة عن مكتب التمثيل التجاري في بلغاريا وإجراءات الإقامة.">
+<style>
+:root{--navy:#101d35;--gold:#d5b36a;--cream:#f8f6f0;--text:#283247}
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;line-height:1.9;color:var(--text);background:var(--cream);direction:rtl}
+a{color:inherit}
+header{background:var(--navy);color:white;padding:22px 6%;border-bottom:3px solid var(--gold)}
+.header-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{text-decoration:none;text-align:right}
+.brand-name{display:block;color:var(--gold);font-size:27px;font-weight:bold;letter-spacing:1px;direction:ltr}
+.tagline{display:block;font-size:12px;letter-spacing:1px;color:#e9e4d8}
+.languages{display:flex;gap:15px;flex-wrap:wrap}
+.languages a{color:white;text-decoration:none;font-size:14px}
+.languages a:hover,nav a:hover{color:var(--gold)}
+nav{background:#1b2d4b;padding:12px;text-align:center}
+nav a{display:inline-block;color:white;text-decoration:none;margin:4px 12px;font-size:14px}
+.hero{background:linear-gradient(120deg,#101d35,#263b5c);color:white;padding:65px 20px;text-align:center;border-bottom:4px solid var(--gold)}
+.hero-inner{max-width:850px;margin:auto}
+.eyebrow{color:var(--gold);font-size:13px;font-weight:bold}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.5;margin:18px 0}
+.hero p{max-width:750px;margin:0 auto 25px;color:#edf0f6;font-size:18px}
+.button{display:inline-block;padding:10px 23px;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:bold;border-radius:4px}
+main{max-width:1050px;margin:42px auto;padding:0 22px}
+section{background:white;padding:28px;margin-bottom:24px;border-radius:8px;box-shadow:0 4px 18px #101d3510}
+h2{color:var(--navy);font-size:24px;margin-top:0;padding-bottom:10px;border-bottom:2px solid var(--gold)}
+h3{color:var(--navy);margin-bottom:5px}
+.notice{background:#f8f2e4;border-right:4px solid var(--gold);padding:16px 20px}
+.contact{text-align:center;background:var(--navy);color:white}
+.contact h2{color:var(--gold)}
+.contact a{color:var(--gold);direction:ltr;unicode-bidi:embed}
+footer{background:#0b1528;color:#e5e8ee;text-align:center;padding:25px 20px;font-size:13px}
+footer a{color:var(--gold)}
+@media(max-width:600px){.brand-name{font-size:23px}.hero{padding:45px 18px}section{padding:21px}nav a{margin:5px 7px}}
+</style>
 </head>
-
 <body>
 
 <header>
-  <h1>مكتب التمثيل التجاري في بلغاريا</h1>
-  <p>معلومات حول إجراءات TRO وخيارات الإقامة ذات الصلة</p>
+<div class="header-inner">
+<a class="brand" href="index.html">
+<span class="brand-name">ELITE RESIDENCY</span>
+<span class="tagline">بوابتكم إلى أوروبا</span>
+</a>
+<div class="languages">
+<a href="../tro.html" lang="en" dir="ltr">English</a>
+<a href="../fr/tro.html" lang="fr" dir="ltr">Français</a>
+<a href="tro.html" lang="ar">العربية</a>
+</div>
+</div>
 </header>
 
 <nav>
-  <a href="index.html">الرئيسية</a>
-  <a href="tro.html">مكتب التمثيل التجاري</a>
-  <a href="residence.html">الإقامة</a>
-  <a href="europe.html">بلغاريا وأوروبا</a>
-  <a href="index.html#contact">اتصل بنا</a>
-  <a href="../index.html">English</a>
-  <a href="../fr/index.html">Français</a>
+<a href="index.html">الرئيسية</a>
+<a href="residence.html">الإقامة في بلغاريا</a>
+<a href="tro.html">مكتب التمثيل التجاري</a>
+<a href="europe.html">بلغاريا وأوروبا</a>
 </nav>
 
+<div class="hero">
+<div class="hero-inner">
+<div class="eyebrow">معلومات الأعمال والهجرة في بلغاريا</div>
+<h1>مكتب التمثيل التجاري (TRO)</h1>
+<p>تعرّف على كيفية ارتباط إنشاء مكتب تمثيلي لشركة أجنبية في بلغاريا بإجراءات طلب الإقامة، وما ينبغي التحقق منه قبل البدء.</p>
+<a class="button" href="#process">تعرّف على الخطوات</a>
+</div>
+</div>
+
 <main>
+<section>
+<h2>ما هو مكتب التمثيل التجاري؟</h2>
+<p>مكتب التمثيل التجاري، المعروف اختصاراً باسم TRO، يتيح لشركة أجنبية إنشاء حضور تمثيلي لها في بلغاريا. وبحسب وضع الشركة والقواعد القانونية المعمول بها، قد يكون إنشاء المكتب ذا صلة بإجراءات الهجرة الخاصة بممثل الشركة.</p>
+<p>تسجيل المكتب والموافقة على طلب الهجرة إجراءان منفصلان. ولا يضمن إنشاء مكتب التمثيل التجاري، بحد ذاته، الحصول على تأشيرة أو تصريح إقامة.</p>
+</section>
 
-  <section>
-    <h2>ما هو مكتب التمثيل التجاري (TRO)؟</h2>
-    <p>
-      قد تتمكن بعض الشركات الأجنبية من تسجيل مكتب تمثيل تجاري
-      في بلغاريا وفقاً للقواعد والإجراءات المعمول بها.
-      ويمكن أن يساعد المكتب في تمثيل مصالح الشركة وتطوير
-      العلاقات التجارية، ضمن الأنشطة المسموح بها قانوناً.
-    </p>
-    <p>
-      يجب التحقق من متطلبات التسجيل والوثائق المطلوبة مع الجهات
-      البلغارية المختصة قبل بدء الإجراءات.
-    </p>
-  </section>
+<section>
+<h2>لمن قد يكون هذا المسار مناسباً؟</h2>
+<p>قد يكون هذا المسار محل اهتمام ممثلي الشركات الأجنبية القائمة الذين يرغبون في دراسة الخيارات القانونية للإقامة في بلغاريا.</p>
+<p>تعتمد الأهلية على وضع الشركة الأجنبية وتاريخ نشاطها وطبيعة التمثيل المقترح والمتطلبات القانونية البلغارية السارية. لذلك ينبغي تقييم كل حالة على حدة قبل الالتزام بأي نفقات أو إجراءات.</p>
+</section>
 
-  <section>
-    <h2>العلاقة بين TRO والإقامة</h2>
-    <p>
-      في بعض الحالات، قد يكون تمثيل شركة أجنبية من خلال مكتب
-      مسجل في بلغاريا ذا صلة بطلب الإقامة. وتعتمد الأهلية على
-      استيفاء المتطلبات القانونية وتقديم المستندات المطلوبة.
-    </p>
+<section id="process">
+<h2>كيف تسير الإجراءات عادةً؟</h2>
+<h3>١. مراجعة الشركة الأجنبية</h3>
+<p>مراجعة تسجيل الشركة وتاريخها وأنشطتها التجارية والمستندات المتاحة.</p>
+<h3>٢. التحقق من الشروط القانونية</h3>
+<p>التأكد من القواعد السارية لإنشاء مكتب تمثيل تجاري في بلغاريا وتعيين الممثلين.</p>
+<h3>٣. إعداد المستندات</h3>
+<p>قد تشمل المستندات المطلوبة سجلات الشركة وبيانات الممثل ووثائق الهوية، إضافة إلى الترجمات أو التصديقات اللازمة بحسب الحالة.</p>
+<h3>٤. استكمال إجراءات التسجيل</h3>
+<p>إعداد المستندات المطلوبة وتقديمها إلى الجهات البلغارية المختصة.</p>
+<h3>٥. تقييم مسار الهجرة</h3>
+<p>التحقق مما إذا كان الممثل يستوفي شروط التقدم للحصول على تأشيرة بلغارية للإقامة الطويلة، ثم تصريح إقامة عند الاقتضاء. ويجب التحقق من شروط التأشيرة والإقامة كلٌّ على حدة.</p>
+<h3>٦. اتباع الإجراءات الرسمية</h3>
+<p>تقديم الطلبات والأدلة المطلوبة، وحضور المواعيد عند طلبها، والاستجابة لأي طلبات إضافية للمستندات.</p>
+<div class="notice"><strong>ملاحظة مهمة:</strong> قد تختلف الشروط والمستندات والرسوم ومدد المعالجة وتتغير بمرور الوقت. يرجى التحقق من المتطلبات السارية قبل تقديم الطلب.</div>
+</section>
 
-    <div class="highlight">
-      <strong>مهم:</strong>
-      <p>
-        تسجيل مكتب التمثيل التجاري لا يضمن تلقائياً الموافقة
-        على تصريح الإقامة. كما أنه لا يمنح تلقائياً الجنسية
-        البلغارية أو الحق في العمل في جميع دول الاتحاد الأوروبي.
-      </p>
-    </div>
+<section>
+<h2>التخطيط المالي وشروط الأهلية</h2>
+<p>قبل البدء، من المهم تحديد المسار القانوني المناسب للحالة ومعرفة الأدلة المالية والمتعلقة بالشركة والمستندات الشخصية المطلوبة.</p>
+<p>لا ينبغي افتراض أن مبلغاً استثمارياً محدداً أو التزاماً مالياً معيناً ينطبق على جميع حالات مكتب التمثيل التجاري. ويجب التحقق من أي مبلغ مقترح، بما في ذلك 152,000 يورو سنوياً لمدة سنتين، وفقاً للأساس القانوني المحدد قبل عرضه باعتباره شرطاً رسمياً.</p>
+</section>
 
-    <a class="button" href="residence.html">معلومات عن الإقامة</a>
-  </section>
+<section>
+<h2>بلغاريا وبقية أوروبا</h2>
+<p>بلغاريا عضو في الاتحاد الأوروبي ومنطقة شنغن. وقد تسمح وثيقة إقامة بلغارية سارية بزيارات قصيرة مؤهلة إلى دول أخرى في منطقة شنغن، وفقاً للشروط المعمول بها.</p>
+<p>لكن الإقامة البلغارية لا تمنح تلقائياً الحق في العيش أو العمل في جميع دول الاتحاد الأوروبي. وقد يتطلب الانتقال إلى دولة أخرى تصريحاً أو موافقة منفصلة وفقاً لقوانين تلك الدولة.</p>
+</section>
 
-  <section>
-    <h2>المستندات والإجراءات</h2>
-    <p>قد تشمل الخطوات المطلوبة، حسب الحالة:</p>
-    <ul>
-      <li>التحقق من أهلية الشركة الأجنبية.</li>
-      <li>إعداد مستندات الشركة وتوثيقها حسب المتطلبات.</li>
-      <li>تسجيل مكتب التمثيل لدى الجهة المختصة.</li>
-      <li>إعداد مستندات ممثل الشركة إذا كان طلب الإقامة مناسباً.</li>
-      <li>تقديم طلب التأشيرة أو الإقامة عند الحاجة.</li>
-    </ul>
-    <p>
-      تختلف الإجراءات باختلاف الشركة ومقدم الطلب. يجب تأكيد
-      المتطلبات الحالية مع الجهات الرسمية أو مستشار مؤهل.
-    </p>
-  </section>
+<section>
+<h2>الأسئلة الشائعة</h2>
+<h3>هل يضمن تسجيل مكتب التمثيل التجاري الحصول على الإقامة؟</h3>
+<p>لا. فالتسجيل والموافقة على طلب الهجرة إجراءان منفصلان، ويجب على مقدم الطلب استيفاء الشروط القانونية ذات الصلة.</p>
+<h3>هل تستطيع كل شركة أجنبية استخدام هذا المسار؟</h3>
+<p>ليس بالضرورة. يجب تقييم وضع الشركة وأهلية الممثل وفقاً للمتطلبات السارية.</p>
+<h3>كم تستغرق الإجراءات؟</h3>
+<p>لا توجد مدة واحدة تنطبق على جميع الحالات. فقد تختلف المدة اللازمة لإعداد المستندات والتسجيل ومعالجة التأشيرة وإجراءات الإقامة.</p>
+<h3>ما المستندات التي سأحتاج إليها؟</h3>
+<p>تختلف المتطلبات بحسب الحالة. يُنصح بالحصول على قائمة حديثة بالمستندات قبل طلب الترجمات أو التصديقات أو إجراءات التوثيق القانوني.</p>
+<h3>هل تسمح الإقامة البلغارية بالعمل في جميع أنحاء أوروبا؟</h3>
+<p>لا. فالإقامة البلغارية لا تمنح تلقائياً حقوقاً غير مقيدة للإقامة أو العمل في جميع دول الاتحاد الأوروبي.</p>
+</section>
 
-  <section>
-    <h2>بلغاريا وأوروبا</h2>
-    <p>
-      بلغاريا عضو في الاتحاد الأوروبي ومنطقة شنغن. ومع ذلك،
-      فإن الإقامة البلغارية لا تمنح تلقائياً حق العيش أو العمل
-      في جميع الدول الأوروبية. يجب الالتزام بقواعد كل دولة.
-    </p>
-    <a class="button" href="europe.html">اكتشف فرص أوروبا</a>
-  </section>
+<section class="contact">
+<h2>ناقش حالتك معنا</h2>
+<p>تواصل مع Elite Residency لمناقشة ظروفك وتحديد المتطلبات التي ينبغي التحقق منها قبل البدء.</p>
+<p><strong>البريد الإلكتروني:</strong> <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a></p>
+<p><strong>الهاتف:</strong> <a href="tel:+359876451969">+359876451969</a></p>
+</section>
 
-  <section id="contact">
-    <h2>اتصل بإليت ريزيدنسي</h2>
-    <p>
-      <strong>البريد الإلكتروني:</strong>
-      <a href="mailto:eliteresidency79@gmail.com">
-        eliteresidency79@gmail.com
-      </a>
-    </p>
-    <p>
-      <strong>الهاتف:</strong>
-      <a href="tel:+359876451969">+359 876 451 969</a>
-    </p>
-    <a class="button"
-       href="https://wa.me/359876451969"
-       target="_blank"
-       rel="noopener noreferrer">
-      تواصل معنا عبر واتساب
-    </a>
-  </section>
-
+<section>
+<h2>معلومات عامة وإخلاء مسؤولية قانونية</h2>
+<p>تقدم هذه الصفحة معلومات عامة فقط، ولا تُعد استشارة قانونية ولا تضمن الحصول على تأشيرة أو تصريح إقامة. وقد تتغير القوانين والإجراءات الإدارية. قبل اتخاذ أي خطوة، يرجى التأكد من المتطلبات السارية لدى مختص مؤهل في شؤون الهجرة البلغارية أو لدى الجهات الرسمية المختصة.</p>
+</section>
 </main>
 
 <footer>
-  <p>© 2026 إليت ريزيدنسي. جميع الحقوق محفوظة.</p>
-  <p>
-    المعلومات الواردة في هذا الموقع عامة ولا تضمن الموافقة
-    على طلب الإقامة ولا تُعد بديلاً عن الاستشارة القانونية.
-  </p>
+<p><strong>ELITE RESIDENCY</strong></p>
+<p>بوابتكم إلى أوروبا</p>
+<p><a href="index.html">الرئيسية</a> | <a href="residence.html">الإقامة</a> | <a href="tro.html">مكتب التمثيل التجاري</a> | <a href="europe.html">أوروبا</a></p>
+<p dir="ltr">&copy; 2026 Elite Residency. جميع الحقوق محفوظة.</p>
 </footer>
 
 </body>
