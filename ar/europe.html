@@ -1,222 +1,352 @@
-
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="معلومات عن بلغاريا والسفر وفرص الأعمال في أوروبا.">
-  <title>بلغاريا وأوروبا | إليت ريزيدنسي</title>
+  <meta name="description" content="اكتشف العلاقة بين الإقامة في بلغاريا والسفر إلى أوروبا مع Elite Residency.">
+  <title>بلغاريا وأوروبا | Elite Residency</title>
 
   <style>
+    :root {
+      --navy: #101d35;
+      --gold: #d5b36a;
+      --cream: #f8f6f0;
+      --text: #283247;
+      --white: #ffffff;
+    }
+
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: Arial, Tahoma, sans-serif;
-      background: #f5f7fa;
-      color: #243047;
+      background: var(--cream);
+      color: var(--text);
       line-height: 1.9;
     }
 
     header {
-      background: #123b32;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+      background: var(--navy);
+      color: var(--white);
+      padding: 22px 6%;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      direction: ltr;
     }
 
     nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      display: inline-block;
-      margin: 5px 10px;
-      color: #123b32;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .languages {
+      text-align: center;
+      padding: 14px;
+      background: var(--white);
+      border-bottom: 1px solid #e7e1d5;
+    }
+
+    .languages a {
+      color: var(--navy);
       text-decoration: none;
       font-weight: bold;
+      margin: 0 12px;
     }
 
-    nav a:hover { text-decoration: underline; }
-
-    main {
-      max-width: 950px;
-      margin: 35px auto;
-      padding: 0 20px;
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 70px 20px 80px;
     }
 
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 24px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.05);
+    .eyebrow {
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 1px;
     }
 
-    h2 { color: #123b32; }
+    h1 {
+      max-width: 850px;
+      margin: 18px auto;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.4;
+    }
 
-    .highlight {
-      background: #eaf3ed;
-      border-right: 5px solid #c5a45b;
-      padding: 18px;
-      margin: 20px 0;
+    .hero p {
+      max-width: 740px;
+      margin: 18px auto 28px;
+      color: #e8eaf0;
+      font-size: 18px;
     }
 
     .button {
       display: inline-block;
-      background: #123b32;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 6px;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 12px 24px;
+      border-radius: 4px;
       text-decoration: none;
-      margin: 8px 0;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 50px 22px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto 35px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 28px;
+      line-height: 1.5;
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: var(--gold);
+      margin: 18px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin: 30px 0;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 24px;
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      box-shadow: 0 5px 20px rgba(16, 29, 53, 0.06);
+    }
+
+    .card h3 { color: var(--navy); }
+
+    .card a {
+      color: var(--navy);
+      font-weight: bold;
+    }
+
+    .notice {
+      background: var(--white);
+      border-right: 4px solid var(--gold);
+      padding: 20px;
+      margin: 30px 0;
+    }
+
+    .cta {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 35px 22px;
+      margin-top: 40px;
+      border-radius: 5px;
+    }
+
+    .cta h2 { color: var(--white); }
+
+    .contact-details { margin-top: 20px; }
+
+    .contact-details a {
+      color: var(--gold);
+      text-decoration: none;
+      direction: ltr;
+      display: inline-block;
     }
 
     footer {
-      background: #123b32;
-      color: white;
+      background: #0a1426;
+      color: #d9deea;
       text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
+      padding: 24px 18px;
+      font-size: 13px;
     }
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 25px; }
+    @media (max-width: 650px) {
+      .header-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav { justify-content: center; }
+
+      .hero { padding: 50px 18px; }
+
+      main { padding: 35px 18px; }
     }
   </style>
 </head>
 
 <body>
-
-<header>
-  <h1>بلغاريا وأوروبا</h1>
-  <p>انطلق من بلغاريا واستكشف الفرص الأوروبية</p>
-</header>
-
-<nav>
-  <a href="index.html">الرئيسية</a>
-  <a href="tro.html">مكتب التمثيل التجاري</a>
-  <a href="residence.html">الإقامة</a>
-  <a href="europe.html">بلغاريا وأوروبا</a>
-  <a href="index.html#contact">اتصل بنا</a>
-  <a href="../index.html">English</a>
-  <a href="../fr/index.html">Français</a>
-</nav>
-
-<main>
-
-  <section>
-    <h2>بلغاريا والاتحاد الأوروبي</h2>
-    <p>
-      بلغاريا عضو في الاتحاد الأوروبي ومنطقة شنغن. وقد تكون
-      الإقامة في بلغاريا خياراً مناسباً لبعض الأشخاص المؤهلين
-      الراغبين في تطوير علاقاتهم التجارية واستكشاف فرص التعاون
-      مع الشركات الأوروبية.
-    </p>
-    <p>
-      يعتمد مسار الإقامة المناسب على الجنسية والظروف الشخصية
-      والمتطلبات القانونية المعمول بها.
-    </p>
-  </section>
-
-  <section>
-    <h2>السفر داخل منطقة شنغن</h2>
-    <p>
-      قد يسمح تصريح الإقامة البلغاري الساري بالسفر لفترات قصيرة
-      إلى دول أخرى في منطقة شنغن، وفقاً للشروط المعمول بها.
-      وتكون المدة العامة للزيارات القصيرة عادةً حتى 90 يوماً
-      خلال أي فترة مدتها 180 يوماً في الدول الأخرى ضمن المنطقة.
-    </p>
-
-    <div class="highlight">
-      <strong>معلومة مهمة</strong>
-      <p>
-        لا يمنح تصريح الإقامة البلغاري تلقائياً الحق في العيش
-        أو العمل في دولة أوروبية أخرى. يجب التحقق من متطلبات
-        الدخول والإقامة والعمل الخاصة بكل دولة.
-      </p>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html">ELITE RESIDENCY</a>
+      <nav aria-label="التنقل الرئيسي">
+        <a href="index.html">الرئيسية</a>
+        <a href="residence.html">الإقامة</a>
+        <a href="tro.html">TRO</a>
+        <a href="europe.html">أوروبا</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
     </div>
+  </header>
+
+  <div class="languages">
+    <a href="../europe.html">English</a>
+    <a href="../fr/europe.html">Français</a>
+    <a href="europe.html" lang="ar">العربية</a>
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">Elite Residency · بلغاريا</div>
+    <h1>بلغاريا وأوروبا: افهم خياراتك</h1>
+    <p>
+      تعرّف على خيارات الإقامة في بلغاريا، وإمكانية السفر إلى دول أوروبا،
+      والفرق بين الإقامة في بلغاريا وحقوق الإقامة والعمل في الدول الأخرى.
+    </p>
+    <a class="button" href="#contact">تواصل معنا</a>
   </section>
 
-  <section>
-    <h2>فرص الأعمال في أوروبا</h2>
-    <p>
-      يمكن أن تكون بلغاريا نقطة انطلاق لاستكشاف العلاقات التجارية
-      وفرص التعاون مع الشركات في الأسواق الأوروبية.
-    </p>
-    <ul>
-      <li>البحث عن شركاء تجاريين محتملين.</li>
-      <li>التعرف على الأسواق والبيئات التجارية الأوروبية.</li>
-      <li>دراسة متطلبات تأسيس الأنشطة التجارية.</li>
-      <li>الحصول على استشارة بشأن الأنشطة التجارية بين الدول.</li>
-    </ul>
-    <p>
-      تختلف متطلبات التسجيل والضرائب والتراخيص والعمل من دولة إلى أخرى.
-    </p>
-  </section>
+  <main>
+    <section class="intro">
+      <h2>ابدأ مشروعك في بلغاريا</h2>
+      <div class="gold-line"></div>
+      <p>
+        قد تكون بلغاريا نقطة انطلاق مناسبة للأشخاص الذين يرغبون في دراسة
+        خيارات الإقامة أو تأسيس وجود مهني وتجاري. وتعتمد الخيارات المتاحة
+        على ظروف كل شخص والمتطلبات القانونية المعمول بها.
+      </p>
+    </section>
 
-  <section>
-    <h2>مكتب التمثيل التجاري (TRO)</h2>
-    <p>
-      قد تتمكن بعض الشركات الأجنبية من تسجيل مكتب تمثيل تجاري
-      في بلغاريا. وفي حالات معينة، قد يكون ذلك ذا صلة بطلب
-      إقامة ممثل الشركة إذا استوفى الشروط المطلوبة.
-    </p>
-    <p>
-      تسجيل المكتب لا يضمن الحصول على تصريح إقامة أو الجنسية
-      أو الحق في العمل في جميع الدول الأوروبية.
-    </p>
-    <a class="button" href="tro.html">معلومات عن TRO</a>
-    <br>
-    <a class="button" href="residence.html">الإقامة في بلغاريا</a>
-  </section>
+    <section class="cards">
+      <article class="card">
+        <h3>الإقامة في بلغاريا</h3>
+        <p>
+          تعرّف على الخطوات العامة والمستندات التي قد تكون مطلوبة،
+          وتحقق من الشروط التي تنطبق على حالتك.
+        </p>
+        <a href="residence.html">معرفة المزيد ←</a>
+      </article>
 
-  <section>
-    <h2>كيف يمكننا مساعدتكم؟</h2>
-    <p>
-      تقدم إليت ريزيدنسي معلومات حول خيارات الإقامة في بلغاريا
-      وإجراءات مكتب التمثيل التجاري والمستندات التي قد يحتاج
-      مقدم الطلب إلى إعدادها.
-    </p>
-    <p>
-      تختلف المتطلبات والمدة والنتائج حسب كل حالة والقرارات
-      الصادرة عن السلطات المختصة.
-    </p>
-  </section>
+      <article class="card">
+        <h3>مكتب التمثيل التجاري (TRO)</h3>
+        <p>
+          تعرّف على إطار مكاتب التمثيل التجاري في بلغاريا والمتطلبات
+          الإدارية التي ينبغي مراجعتها مع مختص مؤهل.
+        </p>
+        <a href="tro.html">معرفة المزيد ←</a>
+      </article>
 
-  <section id="contact">
-    <h2>اتصل بإليت ريزيدنسي</h2>
-    <p>للاستفسار عن بلغاريا والفرص الأوروبية، تواصلوا معنا.</p>
-    <p>
-      <strong>البريد الإلكتروني:</strong>
-      <a href="mailto:eliteresidency79@gmail.com">
-        eliteresidency79@gmail.com
+      <article class="card">
+        <h3>السفر في منطقة شنغن</h3>
+        <p>
+          افهم الشروط العامة للزيارات القصيرة إلى دول شنغن والفرق بينها
+          وبين الانتقال للإقامة أو العمل في دولة أخرى.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>مشروعك المهني</h3>
+        <p>
+          راجع أهداف مشروعك والمستندات المتوفرة والمتطلبات التي يجب
+          التأكد منها قبل الالتزام بأي إجراء.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>هل تمنح الإقامة البلغارية حق العيش في جميع دول أوروبا؟</h2>
+      <p>
+        لا. تصريح الإقامة البلغاري لا يمنح تلقائياً الحق في العيش أو العمل
+        في جميع الدول الأوروبية. وتختلف القواعد بحسب الدولة وجنسية الشخص
+        ونوع التصريح الذي يحمله.
+      </p>
+      <p>
+        قد تسمح الإقامة البلغارية السارية، عند استيفاء الشروط المطلوبة،
+        بزيارات قصيرة إلى دول أخرى في منطقة شنغن. والقاعدة العامة للإقامة
+        القصيرة هي 90 يوماً خلال أي فترة مدتها 180 يوماً، مع مراعاة
+        الاستثناءات والشروط الخاصة.
+      </p>
+      <p>
+        أما الانتقال للعيش أو العمل في دولة أخرى، فقد يتطلب الحصول على
+        تصريح أو استيفاء شروط إضافية من تلك الدولة. تحقق دائماً من
+        المعلومات الرسمية قبل السفر أو اتخاذ أي قرار.
+      </p>
+    </section>
+
+    <div class="notice">
+      <strong>معلومات مهمة:</strong>
+      يقدم هذا الموقع معلومات عامة ولا يشكل استشارة قانونية. قد تتغير
+      المتطلبات والمستندات والرسوم والمواعيد. يجب التحقق من الأهلية
+      والشروط المالية لكل حالة مع مختص مؤهل والجهات الرسمية المختصة.
+      لا يوجد ضمان للحصول على الإقامة أو أي تصريح.
+    </div>
+
+    <section id="contact" class="cta">
+      <h2>ناقش مشروعك معنا</h2>
+      <p>
+        تواصل مع Elite Residency لمناقشة مشروعك في بلغاريا
+        ومعرفة الخطوات التي ينبغي التحقق منها.
+      </p>
+      <a class="button" href="mailto:eliteresidency79@gmail.com">
+        أرسل بريداً إلكترونياً
       </a>
-    </p>
-    <p>
-      <strong>الهاتف:</strong>
-      <a href="tel:+359876451969">+359 876 451 969</a>
-    </p>
-    <a class="button"
-       href="https://wa.me/359876451969"
-       target="_blank"
-       rel="noopener noreferrer">
-      تواصل معنا عبر واتساب
-    </a>
-  </section>
 
-</main>
+      <div class="contact-details">
+        <p>
+          البريد الإلكتروني:
+          <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a>
+        </p>
+        <p>
+          الهاتف:
+          <a href="tel:+359876451969">+359 876 451 969</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-<footer>
-  <p>© 2026 إليت ريزيدنسي. جميع الحقوق محفوظة.</p>
-  <p>
-    المعلومات الواردة في هذا الموقع عامة ولا تضمن الموافقة
-    على طلب الإقامة، ولا تُعد بديلاً عن الاستشارة القانونية.
-  </p>
-</footer>
-
+  <footer>
+    <p>© 2026 Elite Residency. جميع الحقوق محفوظة.</p>
+    <p>المعلومات عامة فقط — يرجى التحقق من المتطلبات الرسمية الحالية.</p>
+  </footer>
 </body>
 </html>
+```
