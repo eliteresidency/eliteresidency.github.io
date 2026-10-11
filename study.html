@@ -1,0 +1,560 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Study in Bulgaria with Elite Residency. Explore universities, tuition fees, student visas, living costs and scholarships.">
+  <title>Study in Bulgaria | Elite Residency</title>
+
+  <style>
+    :root {
+      --navy: #101d35;
+      --gold: #d5b36a;
+      --cream: #f8f6f0;
+      --text: #283247;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 22px 6%;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .languages {
+      text-align: center;
+      padding: 14px;
+      background: var(--white);
+      border-bottom: 1px solid #e7e1d5;
+    }
+
+    .languages a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 72px 20px 82px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 18px auto;
+      font-size: clamp(34px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 20px auto 28px;
+      color: #e8eaf0;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 13px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: auto;
+      padding: 50px 22px;
+    }
+
+    .intro {
+      max-width: 850px;
+      text-align: center;
+      margin: 0 auto 38px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 29px;
+      line-height: 1.35;
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: var(--gold);
+      margin: 18px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin: 32px 0;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 24px;
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      box-shadow: 0 5px 20px rgba(16, 29, 53, 0.06);
+    }
+
+    .card h3 { color: var(--navy); }
+
+    .card a {
+      color: var(--navy);
+      font-weight: bold;
+    }
+
+    .section {
+      margin: 42px 0;
+    }
+
+    .notice {
+      background: var(--white);
+      border-left: 4px solid var(--gold);
+      padding: 22px;
+      margin: 30px 0;
+    }
+
+    .cta {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 38px 24px;
+      margin-top: 45px;
+      border-radius: 5px;
+    }
+
+    .cta h2 { color: var(--white); }
+
+    .contact-details { margin-top: 22px; }
+
+    .contact-details a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    footer {
+      background: #0a1426;
+      color: #d9deea;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .header-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav { justify-content: center; }
+      .hero { padding: 52px 18px; }
+      main { padding: 35px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html">ELITE RESIDENCY</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="residence.html">Residence</a>
+        <a href="tro.html">TRO</a>
+        <a href="europe.html">Europe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="languages" aria-label="Choose language">
+    <a href="study.html">English</a>
+    <a href="fr/study.html">Français</a>
+    <a href="ar/study.html" lang="ar">العربية</a>
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">Elite Residency · Bulgaria</div>
+    <h1>Study in Bulgaria</h1>
+    <p>
+      Discover affordable higher education, international study
+      opportunities, English-taught programmes and student life in Bulgaria.
+      Explore the costs and requirements before choosing your university.
+    </p>
+    <a class="button" href="#contact">Discuss Your Study Plans</a>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>Your Education Journey Starts Here</h2>
+      <div class="gold-line"></div>
+      <p>
+        Bulgaria offers a range of higher education options, including
+        programmes in medicine, engineering, business, information technology
+        and other subjects. Tuition fees, admission criteria and teaching
+        languages vary by university and programme.
+      </p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Affordable Education</h3>
+        <p>
+          Indicative annual tuition ranges from €562 to €5,360 for
+          bachelor's programmes and from €1,945 to €5,360 for master's
+          programmes. Always confirm the exact fee with the university.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Living Costs</h3>
+        <p>
+          Plan for approximately €500–€900 per month for accommodation,
+          food, transport and personal expenses. Your actual budget will
+          depend on your city and lifestyle.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>English-Taught Programmes</h3>
+        <p>
+          English-language options are available in fields such as medicine,
+          engineering, business and IT. Check each university's current
+          programme catalogue and entry requirements.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>European Education Framework</h3>
+        <p>
+          Bulgaria participates in the Bologna Process and uses the European
+          Credit Transfer and Accumulation System (ECTS). Recognition of a
+          specific qualification depends on the programme and the relevant
+          authority or employer.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Universities to Explore</h2>
+      <p>
+        These are examples of Bulgarian higher education institutions.
+        Research the available programmes, admission dates and tuition
+        directly with each institution.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Sofia University</h3>
+          <p>
+            Sofia University “St. Kliment Ohridski” is a major public
+            university offering a broad range of academic disciplines.
+          </p>
+          <a href="https://www.uni-sofia.bg/" target="_blank" rel="noopener noreferrer">Official website →</a>
+        </article>
+
+        <article class="card">
+          <h3>American University in Bulgaria</h3>
+          <p>
+            An English-language university in Blagoevgrad with a liberal
+            arts and business-oriented academic environment.
+          </p>
+          <a href="https://www.aubg.edu/" target="_blank" rel="noopener noreferrer">Official website →</a>
+        </article>
+
+        <article class="card">
+          <h3>New Bulgarian University</h3>
+          <p>
+            A university in Sofia offering programmes across multiple
+            fields of study.
+          </p>
+          <a href="https://nbu.bg/" target="_blank" rel="noopener noreferrer">Official website →</a>
+        </article>
+
+        <article class="card">
+          <h3>Medical Universities</h3>
+          <p>
+            Explore medical education in Sofia, Plovdiv, Varna and Pleven.
+            Check programme language, entry exams, fees and recognition
+            requirements before applying.
+          </p>
+          <a href="https://www.mfa.bg/en/155" target="_blank" rel="noopener noreferrer">Bulgarian MFA information →</a>
+        </article>
+
+        <article class="card">
+          <h3>Technical University of Sofia</h3>
+          <p>
+            Consider programmes in engineering, technology and related
+            technical disciplines.
+          </p>
+          <a href="https://tu-sofia.bg/" target="_blank" rel="noopener noreferrer">Official website →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tuition and Monthly Budget</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Bachelor's Degree</h3>
+          <p><strong>€562–€5,360 per year</strong></p>
+          <p>Indicative range; fees vary by university and course.</p>
+        </article>
+
+        <article class="card">
+          <h3>Master's Degree</h3>
+          <p><strong>€1,945–€5,360 per year</strong></p>
+          <p>Indicative range; specialised programmes may cost more.</p>
+        </article>
+
+        <article class="card">
+          <h3>Living Expenses</h3>
+          <p><strong>€500–€900 per month</strong></p>
+          <p>Budget separately for tuition, insurance, visa costs and travel.</p>
+        </article>
+      </div>
+
+      <p>
+        These are general estimates, not guaranteed prices. Ask your chosen
+        university for its current fee schedule and calculate your own
+        accommodation and living budget.
+      </p>
+      <p>
+        Source:
+        <a href="https://education.ec.europa.eu/study-in-europe/country-profiles/bulgaria"
+           target="_blank" rel="noopener noreferrer">
+          European Commission — Study in Bulgaria
+        </a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Student Visa and Residence Requirements</h2>
+      <p>
+        Requirements depend on your nationality, length of study and
+        individual circumstances.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>EU/EEA Students</h3>
+          <p>
+            EU/EEA students generally do not need a student visa. Registration
+            or other residence formalities may still apply depending on
+            the length and circumstances of the stay.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Non-EU Students</h3>
+          <p>
+            Students from outside the EU generally need university admission
+            and may need a long-stay Visa D followed by a Bulgarian residence
+            permit. Confirm the exact procedure with the Bulgarian embassy
+            or consulate responsible for your place of residence.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>After Arrival</h3>
+          <p>
+            Address registration and other formalities may be required
+            shortly after arrival. The European Commission's Bulgaria
+            profile states that the address must be registered within
+            five days. Confirm how this applies to your accommodation
+            and individual situation before travelling.
+          </p>
+        </article>
+      </div>
+
+      <p>
+        Official reference:
+        <a href="https://education.ec.europa.eu/study-in-europe/country-profiles/bulgaria"
+           target="_blank" rel="noopener noreferrer">
+          European Commission — Visa requirements and application process
+        </a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Can Students Work While Studying?</h2>
+      <p>
+        EU students generally have the right to work in Bulgaria without
+        a work permit, subject to the rules that apply to employment.
+        Eligible non-EU students enrolled in full-time higher education
+        may generally work up to 20 hours per week during the academic
+        year and during official university holidays, subject to applicable
+        legal and registration requirements.
+      </p>
+      <p>
+        Do not rely on part-time work as your only source of funding.
+        Check the current rules with the Bulgarian Employment Agency,
+        Migration Directorate and your university before accepting a job.
+      </p>
+      <p>
+        Reference:
+        <a href="https://www.az.government.bg/" target="_blank" rel="noopener noreferrer">
+          Bulgarian Employment Agency
+        </a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Typical Application Documents</h2>
+      <p>
+        Each university sets its own admissions requirements. Applicants
+        may be asked to prepare:
+      </p>
+      <ul>
+        <li>High school diploma or previous qualification</li>
+        <li>Academic transcript or record of grades</li>
+        <li>Proof of English or Bulgarian language proficiency, if required</li>
+        <li>Medical certificate, where required</li>
+        <li>Copy of a valid passport</li>
+        <li>Completed university application form</li>
+        <li>Certified translations, legalisation or recognition documents, if required</li>
+      </ul>
+      <p>
+        Some programmes, especially medicine and other competitive courses,
+        may require entrance examinations or additional documents.
+        Confirm the exact checklist and application deadline with the
+        university before submitting anything.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Scholarships and Funding</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Erasmus+</h3>
+          <p>
+            Explore eligible exchange and mobility opportunities through
+            participating universities and Erasmus+ programmes.
+          </p>
+          <a href="https://erasmus-plus.ec.europa.eu/" target="_blank" rel="noopener noreferrer">Explore Erasmus+ →</a>
+        </article>
+
+        <article class="card">
+          <h3>CEEPUS</h3>
+          <p>
+            Check whether your university and country participate in the
+            Central European Exchange Programme for University Studies.
+          </p>
+          <a href="https://www.ceepus.info/" target="_blank" rel="noopener noreferrer">Explore CEEPUS →</a>
+        </article>
+
+        <article class="card">
+          <h3>University Scholarships</h3>
+          <p>
+            Ask admissions offices about merit awards, financial aid,
+            grants and scholarships for international students.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="notice">
+      <strong>Important information:</strong>
+      This page provides general educational information, not legal,
+      immigration or admissions advice. Fees, visa procedures, work rules
+      and scholarship availability can change. Admission, visas, residence
+      permits, employment and professional recognition are not guaranteed.
+      Always verify the current requirements with official authorities
+      and the university you choose.
+    </div>
+
+    <section id="contact" class="cta">
+      <h2>Planning to Study in Bulgaria?</h2>
+      <p>
+        Contact Elite Residency to discuss your plans and identify the
+        next steps to investigate. University admission and immigration
+        decisions remain with the relevant institutions and authorities.
+      </p>
+      <a class="button" href="mailto:eliteresidency79@gmail.com">
+        Contact Elite Residency
+      </a>
+
+      <div class="contact-details">
+        <p>
+          Email:
+          <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+359876451969">+359 876 451 969</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Elite Residency. All rights reserved.</p>
+    <p>General information only. Please verify current official requirements.</p>
+  </footer>
+</body>
+</html>
+```
