@@ -2,240 +2,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about residence options in Bulgaria through a Trade Representative Office and European travel opportunities.">
-  <title>Residence in Bulgaria | Elite Residency</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #243047;
-      background: #f5f7fa;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #123b32;
-      color: white;
-      padding: 25px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 30px;
-    }
-
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      color: #123b32;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 950px;
-      margin: 35px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 22px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      color: #123b32;
-    }
-
-    .highlight {
-      background: #eaf3ed;
-      border-left: 5px solid #c5a45b;
-      padding: 18px;
-      margin: 20px 0;
-    }
-
-    .button {
-      display: inline-block;
-      background: #123b32;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-
-    .button:hover {
-      background: #205849;
-    }
-
-    footer {
-      background: #123b32;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: inline-block;
-        margin: 6px;
-      }
-
-      header h1 {
-        font-size: 24px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residence in Bulgaria | Elite Residency</title>
+<meta name="description" content="Explore Bulgarian residence options and understand the application process with Elite Residency.">
+<style>
+:root{--navy:#101d35;--gold:#d5b36a;--cream:#f8f6f0;--text:#283247}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.7;color:var(--text);background:var(--cream)}
+a{color:inherit}
+header{background:var(--navy);color:white;padding:22px 6%;border-bottom:3px solid var(--gold)}
+.header-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{text-decoration:none}
+.brand-name{display:block;color:var(--gold);font-size:27px;font-weight:bold;letter-spacing:1px}
+.tagline{display:block;font-size:12px;letter-spacing:2px;color:#e9e4d8}
+.languages{display:flex;gap:15px;flex-wrap:wrap}
+.languages a{color:white;text-decoration:none;font-size:14px}
+.languages a:hover,nav a:hover{color:var(--gold)}
+nav{background:#1b2d4b;padding:12px;text-align:center}
+nav a{display:inline-block;color:white;text-decoration:none;margin:4px 12px;font-size:14px}
+.hero{background:linear-gradient(120deg,#101d35,#263b5c);color:white;padding:65px 20px;text-align:center;border-bottom:4px solid var(--gold)}
+.hero-inner{max-width:850px;margin:auto}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:bold}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.2;margin:18px 0}
+.hero p{max-width:750px;margin:0 auto 25px;color:#edf0f6;font-size:18px}
+.button{display:inline-block;padding:12px 23px;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:bold;border-radius:4px}
+main{max-width:1050px;margin:42px auto;padding:0 22px}
+section{background:white;padding:28px;margin-bottom:24px;border-radius:8px;box-shadow:0 4px 18px #101d3510}
+h2{color:var(--navy);font-size:25px;margin-top:0;padding-bottom:10px;border-bottom:2px solid var(--gold)}
+h3{color:var(--navy);margin-bottom:5px}
+.notice{background:#f8f2e4;border-left:4px solid var(--gold);padding:16px 20px}
+.contact{text-align:center;background:var(--navy);color:white}
+.contact h2{color:var(--gold)}
+.contact a{color:var(--gold)}
+footer{background:#0b1528;color:#e5e8ee;text-align:center;padding:25px 20px;font-size:13px}
+footer a{color:var(--gold)}
+@media(max-width:600px){.brand-name{font-size:23px}.hero{padding:45px 18px}section{padding:21px}nav a{margin:5px 7px}}
+</style>
 </head>
-
 <body>
 
-  <header>
-    <h1>Residence in Bulgaria</h1>
-    <p>Bulgarian Residence Solutions & European Opportunities</p>
-  </header>
+<header>
+<div class="header-inner">
+<a class="brand" href="index.html">
+<span class="brand-name">ELITE RESIDENCY</span>
+<span class="tagline">YOUR GATEWAY TO EUROPE</span>
+</a>
+<div class="languages">
+<a href="residence.html">English</a>
+<a href="fr/residence.html">Français</a>
+<a href="ar/residence.html" lang="ar">العربية</a>
+</div>
+</div>
+</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="tro.html">TRO Status</a>
-    <a href="residence.html">Residence</a>
-    <a href="europe.html">Europe</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="residence.html">Residence in Bulgaria</a>
+<a href="tro.html">TRO Status</a>
+<a href="europe.html">Bulgaria &amp; Europe</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <main>
-    <section>
-      <h2>Residence in Bulgaria</h2>
-      <p>
-        Bulgaria is a member of the European Union and offers various
-        residence routes for eligible foreign nationals. The right
-        option depends on your nationality, circumstances, and the
-        immigration rules applicable to your situation.
-      </p>
-      <p>
-        Elite Residency provides information and assistance to help
-        applicants understand the process and prepare the relevant
-        documentation.
-      </p>
-    </section>
+<div class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Bulgarian Immigration Information</div>
+<h1>Residence in Bulgaria</h1>
+<p>Explore Bulgarian residence options and understand the steps involved in preparing an application suited to your circumstances.</p>
+<a class="button" href="#options">Explore Residence Options</a>
+</div>
+</div>
 
-    <section>
-      <h2>Trade Representative Office (TRO)</h2>
-      <p>
-        A foreign company may be able to register a Trade Representative
-        Office in Bulgaria. Under applicable conditions, this may be
-        relevant to a residence application for a foreign representative.
-      </p>
-      <p>
-        Registering an office does not automatically guarantee a residence
-        permit. Applicants must meet the applicable legal requirements.
-      </p>
-      <a class="button" href="tro.html">Learn More About TRO</a>
-    </section>
+<main>
+<section>
+<h2>Residence in Bulgaria</h2>
+<p>Bulgaria offers different residence pathways for eligible foreign nationals. The appropriate option depends on your nationality, personal circumstances, purpose of stay and the immigration rules that apply to your situation.</p>
+<p>Understanding the relevant route before preparing documents can help you plan the process more effectively. Requirements should always be checked against current official guidance.</p>
+</section>
 
-    <section>
-      <h2>Financial Planning</h2>
-      <div class="highlight">
-        <strong>Planning figure: €152,000 per year for two years.</strong>
-        <p>
-          This figure is included for service-planning purposes only.
-          It is not represented as an official government minimum or
-          statutory immigration requirement. Please confirm the purpose
-          and applicable requirements before making any financial commitment.
-        </p>
-      </div>
-    </section>
+<section id="options">
+<h2>Explore Possible Residence Routes</h2>
+<h3>Trade Representative Office (TRO)</h3>
+<p>For some representatives of established foreign companies, a Bulgarian trade representative office may be relevant to an immigration application. Company registration and residence approval are separate procedures, and eligibility must be assessed individually.</p>
+<p><a href="tro.html">Learn more about the TRO route →</a></p>
 
-    <section>
-      <h2>Documents and Application Process</h2>
-      <p>Depending on your residence route, the process may involve:</p>
-      <ul>
-        <li>Checking eligibility for the relevant residence category.</li>
-        <li>Preparing company and representative-office documents, where applicable.</li>
-        <li>Obtaining the appropriate visa, if required.</li>
-        <li>Submitting an application to the competent authorities.</li>
-        <li>Providing additional documents requested by the authorities.</li>
-      </ul>
-      <p>
-        Requirements vary by individual circumstances. Check the current
-        rules with the Bulgarian authorities or a qualified immigration
-        professional.
-      </p>
-    </section>
+<h3>Long-stay visa and residence procedures</h3>
+<p>Some residence routes require a long-stay visa before a residence application can be made in Bulgaria. The applicable procedure depends on the legal basis for the application.</p>
 
-    <section>
-      <h2>Access to Europe</h2>
-      <p>
-        Bulgaria is a member of the European Union and the Schengen Area.
-        A valid Bulgarian residence permit may allow short visits to
-        other Schengen countries, subject to applicable conditions.
-      </p>
-      <p>
-        Bulgarian residence does not automatically grant the right to
-        live or work in every European country. Separate national
-        requirements may apply.
-      </p>
-      <a class="button" href="europe.html">Explore European Opportunities</a>
-    </section>
+<h3>Other residence options</h3>
+<p>Other routes may be available depending on factors such as family circumstances, employment, study, business activities or other legally recognised grounds. Not every route is available to every applicant.</p>
+</section>
 
-    <section id="contact">
-      <h2>Contact Elite Residency</h2>
-      <p>
-        Contact us for information about Bulgarian residence options
-        and Trade Representative Office procedures.
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:eliteresidency79@gmail.com">
-          eliteresidency79@gmail.com
-        </a>
-      </p>
-      <p>
-        <strong>Phone:</strong>
-        <a href="tel:+359876451969">+359 876 451 969</a>
-      </p>
-      <a class="button"
-         href="https://wa.me/359876451969"
-         target="_blank"
-         rel="noopener noreferrer">
-        Contact Us on WhatsApp
-      </a>
-    </section>
-  </main>
+<section>
+<h2>How to Prepare</h2>
+<h3>1. Identify the applicable route</h3>
+<p>Clarify the purpose of your stay and determine which legal basis may apply to your circumstances.</p>
+<h3>2. Check the current requirements</h3>
+<p>Confirm eligibility, document requirements, translations, certifications and any applicable financial evidence.</p>
+<h3>3. Prepare your documents</h3>
+<p>Collect the documents required for your specific route and check that they meet the relevant format and validity rules.</p>
+<h3>4. Submit the appropriate application</h3>
+<p>Follow the instructions of the competent authorities and attend any required appointments.</p>
+<div class="notice"><strong>Important:</strong> This is a general overview, not a complete application checklist. Requirements and procedures may change.</div>
+</section>
 
-  <footer>
-    <p>&copy; 2026 Elite Residency. All rights reserved.</p>
-    <p>
-      This website provides general information and does not guarantee
-      immigration approval or constitute legal advice.
-    </p>
-  </footer>
+<section>
+<h2>Bulgarian Residence and Europe</h2>
+<p>Bulgaria is a member of the European Union and the Schengen Area. A valid Bulgarian residence document may permit eligible short visits to other Schengen countries under the applicable rules.</p>
+<p>However, Bulgarian residence does not automatically grant the right to live or work in every EU country. Separate permission may be required to settle or work elsewhere.</p>
+<p><a href="europe.html">Learn more about Bulgaria and Europe →</a></p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Elite Residency</h2>
+<p>Discuss your circumstances and identify the requirements that should be verified before you begin.</p>
+<p><strong>Email:</strong> <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a></p>
+<p><strong>Phone:</strong> <a href="tel:+359876451969">+359876451969</a></p>
+</section>
+
+<section>
+<h2>Information and Legal Disclaimer</h2>
+<p>This page provides general information only and is not legal advice. It does not guarantee eligibility, visa issuance or residence approval. Immigration requirements may change. Confirm the current rules with a qualified Bulgarian immigration professional or the competent authorities before acting.</p>
+</section>
+</main>
+
+<footer>
+<p><strong>ELITE RESIDENCY</strong></p>
+<p>Your Gateway to Europe</p>
+<p><a href="index.html">Home</a> | <a href="residence.html">Residence</a> | <a href="tro.html">TRO</a> | <a href="europe.html">Europe</a></p>
+<p>&copy; 2026 Elite Residency. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
