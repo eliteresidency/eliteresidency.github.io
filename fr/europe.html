@@ -1,221 +1,387 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez les possibilités de voyage et d'affaires en Europe depuis la Bulgarie.">
+  <meta name="description" content="Découvrez les possibilités de résidence en Bulgarie et les règles de voyage en Europe avec Elite Residency.">
   <title>Bulgarie et Europe | Elite Residency</title>
 
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      --navy: #101d35;
+      --gold: #d5b36a;
+      --cream: #f8f6f0;
+      --text: #283247;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #243047;
-      background: #f5f7fa;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
       line-height: 1.7;
     }
 
     header {
-      background: #123b32;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+      background: var(--navy);
+      color: var(--white);
+      padding: 22px 6%;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--gold);
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
     }
 
     nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color: #123b32;
+      color: var(--white);
       text-decoration: none;
-      margin: 6px 10px;
+      font-size: 14px;
+    }
+
+    nav a:hover,
+    .languages a:hover {
+      color: var(--gold);
+    }
+
+    .languages {
+      text-align: center;
+      padding: 15px;
+      background: var(--white);
+      border-bottom: 1px solid #e7e1d5;
+    }
+
+    .languages a {
+      color: var(--navy);
+      text-decoration: none;
       font-weight: bold;
-      display: inline-block;
+      margin: 0 12px;
     }
 
-    main {
-      max-width: 950px;
-      margin: 35px auto;
-      padding: 0 20px;
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 75px 20px 85px;
     }
 
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 24px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.05);
+    .hero .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
     }
 
-    h2 { color: #123b32; }
+    h1 {
+      max-width: 850px;
+      margin: 18px auto;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+    }
 
-    .highlight {
-      background: #eaf3ed;
-      border-left: 5px solid #c5a45b;
-      padding: 18px;
-      margin: 20px 0;
+    .hero p {
+      max-width: 720px;
+      margin: 18px auto 28px;
+      font-size: 18px;
+      color: #e8eaf0;
     }
 
     .button {
       display: inline-block;
-      background: #123b32;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 6px;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 13px 24px;
+      border-radius: 4px;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 38px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 29px;
+      line-height: 1.3;
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: var(--gold);
+      margin: 18px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin: 35px 0;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 25px;
+      border-top: 3px solid var(--gold);
+      box-shadow: 0 5px 20px rgba(16, 29, 53, 0.06);
+      border-radius: 4px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .notice {
+      background: #fff;
+      border-left: 4px solid var(--gold);
+      padding: 22px;
+      margin: 30px 0;
+    }
+
+    .cta {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 38px 25px;
+      margin-top: 45px;
+      border-radius: 5px;
+    }
+
+    .cta h2 {
+      color: var(--white);
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 22px;
+    }
+
+    .contact-details {
+      margin-top: 22px;
+      line-height: 2;
+    }
+
+    .contact-details a {
+      color: var(--gold);
+      text-decoration: none;
     }
 
     footer {
-      background: #123b32;
-      color: white;
+      background: #0a1426;
+      color: #d9deea;
       text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
+      padding: 25px 20px;
+      font-size: 13px;
     }
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 25px; }
+    @media (max-width: 650px) {
+      .header-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 55px 18px;
+      }
+
+      main {
+        padding: 38px 18px;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Bulgarie → Europe</h1>
-    <p>Votre point de départ en Bulgarie et vos perspectives européennes</p>
+    <div class="header-inner">
+      <a class="brand" href="index.html">ELITE RESIDENCY</a>
+
+      <nav aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="residence.html">Résidence</a>
+        <a href="tro.html">TRO</a>
+        <a href="europe.html">Europe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="tro.html">Statut TRO</a>
-    <a href="residence.html">Résidence</a>
-    <a href="europe.html">Bulgarie → Europe</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
+  <div class="languages" aria-label="Choisir la langue">
+    <a href="../europe.html">English</a>
+    <a href="europe.html">Français</a>
+    <a href="../ar/europe.html" lang="ar">العربية</a>
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">Elite Residency · Bulgarie</div>
+    <h1>La Bulgarie et vos possibilités en Europe</h1>
+    <p>
+      Découvrez les démarches de résidence en Bulgarie, les possibilités
+      liées à votre projet professionnel et les règles applicables aux
+      déplacements dans l’espace Schengen.
+    </p>
+    <a class="button" href="#contact">Parler à notre équipe</a>
+  </section>
 
   <main>
-    <section>
-      <h2>La Bulgarie et l'Europe</h2>
+    <section class="intro">
+      <h2>Commencez votre projet en Bulgarie</h2>
+      <div class="gold-line"></div>
       <p>
-        La Bulgarie est membre de l'Union européenne et de l'espace
-        Schengen. Pour les personnes admissibles, une résidence en
-        Bulgarie peut constituer un point de départ pour développer
-        des relations commerciales et explorer des possibilités en Europe.
-      </p>
-      <p>
-        La voie de séjour disponible dépend de votre nationalité,
-        de votre situation et des règles d'immigration applicables.
+        La Bulgarie peut constituer une base pour les personnes qui souhaitent
+        développer une activité, établir une présence professionnelle ou
+        étudier les possibilités de résidence dans l’Union européenne.
+        Chaque situation doit être examinée selon la nationalité du demandeur,
+        son activité et les règles applicables.
       </p>
     </section>
 
-    <section>
-      <h2>Voyager dans l'espace Schengen</h2>
-      <p>
-        Un titre de séjour bulgare valide peut permettre des voyages
-        de courte durée dans les autres pays de l'espace Schengen,
-        sous réserve des conditions applicables. En règle générale,
-        les séjours dans les autres pays Schengen sont limités à
-        90 jours sur toute période de 180 jours.
-      </p>
-
-      <div class="highlight">
-        <strong>Information importante</strong>
+    <section class="cards">
+      <article class="card">
+        <h3>Résidence en Bulgarie</h3>
         <p>
-          Un titre de séjour bulgare ne donne pas automatiquement
-          le droit de vivre ou de travailler dans un autre pays européen.
-          Vérifiez les conditions d'entrée et les règles applicables
-          à votre situation personnelle.
+          Découvrez les principales étapes, les documents généralement
+          nécessaires et les points à vérifier avant de commencer une
+          demande de résidence.
         </p>
-      </div>
+        <a href="residence.html">En savoir plus →</a>
+      </article>
+
+      <article class="card">
+        <h3>TRO — Bureau de représentation commerciale</h3>
+        <p>
+          Explorez le cadre du bureau de représentation commerciale en
+          Bulgarie, les exigences administratives et les éléments à examiner
+          avec un professionnel qualifié.
+        </p>
+        <a href="tro.html">En savoir plus →</a>
+      </article>
+
+      <article class="card">
+        <h3>Voyager dans l’espace Schengen</h3>
+        <p>
+          Comprenez la différence entre un titre de séjour bulgare, les
+          conditions d’entrée dans d’autres pays et les règles de séjour
+          temporaire dans l’espace Schengen.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Votre projet professionnel</h3>
+        <p>
+          Préparez votre projet en examinant les activités envisagées,
+          les justificatifs disponibles, les obligations applicables et
+          les démarches à confirmer avant tout engagement.
+        </p>
+      </article>
     </section>
 
     <section>
-      <h2>Possibilités commerciales en Europe</h2>
+      <h2>Résidence bulgare et accès à l’Europe : ce qu’il faut savoir</h2>
       <p>
-        La Bulgarie peut servir de base pour explorer des relations
-        commerciales avec des entreprises d'autres marchés européens.
-      </p>
-      <ul>
-        <li>Rechercher des partenaires commerciaux potentiels.</li>
-        <li>Découvrir les marchés et les environnements économiques européens.</li>
-        <li>Étudier les conditions de création d'activités commerciales.</li>
-        <li>Obtenir des conseils sur les activités transfrontalières.</li>
-      </ul>
-      <p>
-        Les obligations en matière d'enregistrement, de fiscalité,
-        de licences et d'emploi varient selon les pays.
-      </p>
-    </section>
-
-    <section>
-      <h2>Bureau de représentation commerciale (TRO)</h2>
-      <p>
-        Un bureau de représentation commerciale peut être une option
-        pour certaines sociétés étrangères souhaitant établir une
-        présence commerciale en Bulgarie. Dans certaines situations,
-        leur représentant peut être admissible à une demande de séjour,
-        sous réserve des règles applicables.
+        Un titre de séjour délivré par la Bulgarie ne donne pas automatiquement
+        le droit de vivre ou de travailler dans tous les pays européens.
+        Les conditions varient selon le pays, la nationalité et le statut
+        de la personne.
       </p>
       <p>
-        La création d'un bureau ne garantit pas l'obtention d'un titre
-        de séjour, de la citoyenneté européenne ou d'un droit général
-        de travailler dans toute l'Europe.
-      </p>
-      <a class="button" href="tro.html">Découvrir le statut TRO</a>
-      <br>
-      <a class="button" href="residence.html">Résidence en Bulgarie</a>
-    </section>
-
-    <section>
-      <h2>Comment nous pouvons vous aider</h2>
-      <p>
-        Elite Residency fournit des informations sur les possibilités
-        de résidence en Bulgarie, les démarches liées au TRO et les
-        documents que les candidats peuvent devoir préparer.
+        Les titulaires d’un titre de séjour valide peuvent, sous réserve des
+        conditions applicables, effectuer des visites de courte durée dans
+        d’autres pays de l’espace Schengen. La règle générale pour les
+        séjours de courte durée est de 90 jours sur toute période de
+        180 jours, mais des exceptions et conditions particulières peuvent
+        s’appliquer.
       </p>
       <p>
-        Chaque dossier est évalué individuellement. Les exigences,
-        les délais et les décisions dépendent des autorités compétentes
-        et de la situation du demandeur.
+        Pour s’installer, travailler ou exercer une activité dans un autre
+        pays, des autorisations supplémentaires peuvent être nécessaires.
+        Vérifiez toujours les règles officielles du pays concerné.
       </p>
     </section>
 
-    <section id="contact">
-      <h2>Contacter Elite Residency</h2>
+    <div class="notice">
+      <strong>Information importante :</strong>
+      ce site fournit des informations générales et ne constitue pas un
+      avis juridique. Les conditions, documents, frais et délais peuvent
+      changer. L’éligibilité et les exigences financières doivent être
+      vérifiées au cas par cas auprès d’un professionnel qualifié et des
+      autorités compétentes. Aucune résidence ou autorisation n’est garantie.
+    </div>
+
+    <section id="contact" class="cta">
+      <h2>Parlons de votre projet</h2>
       <p>
-        Vous avez des questions sur la Bulgarie ou les possibilités
-        européennes ? Contactez-nous pour plus d'informations.
+        Contactez Elite Residency pour discuter de votre projet de résidence
+        en Bulgarie et identifier les prochaines étapes à vérifier.
       </p>
-      <p>
-        <strong>E-mail :</strong>
-        <a href="mailto:eliteresidency79@gmail.com">eliteresidency79@gmail.com</a>
-      </p>
-      <p>
-        <strong>Téléphone :</strong>
-        <a href="tel:+359876451969">+359 876 451 969</a>
-      </p>
-      <a class="button" href="https://wa.me/359876451969"
-         target="_blank" rel="noopener noreferrer">
-        Nous contacter sur WhatsApp
+      <a class="button" href="mailto:eliteresidency79@gmail.com">
+        Envoyer un e-mail
       </a>
+
+      <div class="contact-details">
+        <div>
+          E-mail :
+          <a href="mailto:eliteresidency79@gmail.com">
+            eliteresidency79@gmail.com
+          </a>
+        </div>
+        <div>
+          Téléphone :
+          <a href="tel:+359876451969">+359 876 451 969</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Elite Residency. Tous droits réservés.</p>
-    <p>
-      Ce site fournit des informations générales et ne garantit pas
-      l'approbation d'une demande d'immigration. Il ne constitue pas
-      un conseil juridique.
-    </p>
+    <p>© 2026 Elite Residency. Tous droits réservés.</p>
+    <p>Informations générales uniquement — vérifiez toujours les règles officielles applicables.</p>
   </footer>
 </body>
 </html>
+```
